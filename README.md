@@ -14,8 +14,11 @@ Add route:
 Example:
 
 ```
-POST $router-> map ('GET | POST', '/ order / payment /', 'order', 'order_payment');
+POST $router->map('GET|POST', 'order/payment/', 'order', 'order_payment');
 ```
 ```
-GET $router-> map ('GET', '/', 'home / index', 'index');
- ```
+GET $router->map('GET', '/', 'home/index', 'index');
+```
+```
+GET $router->map('GET', '/', 'order/payment/[i:id]', 'order_payment_id');
+```
